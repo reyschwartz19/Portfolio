@@ -1,3 +1,124 @@
+/*#7FFFD4*/
 *{
   
+  box-sizing: border-box;
+  
+  
+}
+body{
+  background-color: #1C3251;
+  overflow-x: hidden;
+  padding: 0 50px;
+  
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+.nav-list{
+  display: flex;
+  padding-right: 100px;
+ 
+}
+.logo{
+  height: 75px;
+  width: 95px;
+  padding-left: 20px;
+}
+.nav-link{
+  padding: 80px;
+  list-style-type: none;
+}
+.nav-list a{
+   text-decoration: none;
+   color: #F9F6EE;
+}
+.intro{
+  height: 660px;
+  width: 100%;
+  margin-left: 50px;
+  
+}
+.intro-box{
+  border: 2px solid black;
+  height: 600px;
+  width: 70%;
+  padding-top: 200px;
+  padding-left: 100px;
+  margin-left: 20px;
+  text-align: justify;
+}
+.p-text{
+  padding: 10px;
+}
+#about{
+  height: 720px;
+  width: 100%;
+  border: 2px solid black;
+  
+}
+.about-info{
+  display: flex;
+  gap: 10px;
+  border: 2px solid black;
+  margin-right: 80px;
+}
+.about-text{
+  border: 2px solid black;
+  text-align: justify;
+  padding-top: 100px;
+}
+.pfp{
+  width: 500px;
+  height: 500px;
+  
+}
+.project-image{
+  width: 400px;
+  height: auto;
+}
+#projects{
+  height: 850px;
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.project-box{
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  width: 450px;
+  height: 300px;
+  padding-top: 10px;
+}
+#contact{
+ height: 740px;
+ width: 100%;
+ border: 2px solid black;
+ text-align: center;
+ padding-top: 200px;
+ 
+}
+.icon{
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.icon-container{
+  display: flex;
+  gap: 60px;
+  justify-content: space-evenly;
 }
