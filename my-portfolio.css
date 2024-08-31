@@ -6,7 +6,7 @@
   
 }
 body{
-  background-color: #1C3251;
+  background-color: #112138;
   overflow-x: hidden;
   padding: 0 50px;
   
@@ -23,6 +23,8 @@ body{
 .nav-list{
   display: flex;
   padding-right: 100px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 15x;
  
 }
 .logo{
@@ -45,7 +47,7 @@ body{
   
 }
 .intro-box{
-  border: 2px solid black;
+  
   height: 600px;
   width: 70%;
   padding-top: 200px;
@@ -53,8 +55,26 @@ body{
   margin-left: 20px;
   text-align: justify;
 }
+.ip1{
+  font-family: 'Press Start 2P', cursive;
+  color: #7FFFD4;
+}
+.ip2{
+  font-family: 'Georgia', serif;
+  font-size: 70px;
+  font-weight: bolder;
+  color: rgb(180, 215, 220);
+}
+.ip3,.ip4{
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(160, 195, 200);
+}
+
 .p-text{
   padding: 10px;
+  color: rgb(160, 195, 200);
+  font-family: 'Georgia', serif;
+  font-size: 20px;
 }
 #about{
   height: 720px;
@@ -67,6 +87,10 @@ body{
   gap: 10px;
   border: 2px solid black;
   margin-right: 80px;
+}
+.heading{
+  font-family: 'Share Tech Mono', monospace;
+  color: #7FFFD4;
 }
 .about-text{
   border: 2px solid black;
