@@ -79,13 +79,13 @@ body{
 #about{
   height: 720px;
   width: 100%;
-  border: 2px solid black;
+  
   
 }
 .about-info{
   display: flex;
   gap: 10px;
-  border: 2px solid black;
+  
   margin-right: 80px;
 }
 .heading{
@@ -93,14 +93,21 @@ body{
   color: #7FFFD4;
 }
 .about-text{
-  border: 2px solid black;
+ 
   text-align: justify;
   padding-top: 100px;
 }
 .pfp{
   width: 500px;
   height: 500px;
-  
+  box-shadow: 0 10px 20px rgba(127, 255, 212, 0.5);
+  border-radius: 20px;
+
+}
+.pfp:hover{
+  transform: translateY(-20px);
+  transform: translateX(-10px);
+  box-shadow: 0 10px 20px rgba(127, 255, 212, 1) ;
 }
 .project-image{
   width: 400px;
