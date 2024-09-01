@@ -19,7 +19,11 @@ body{
   align-items: center;
   margin-bottom: 20px;
   padding-left: 50px;
+  position: fixed;
+  background-color: #112138;
+  top: 0;
 }
+.nav-bar
 .nav-list{
   display: flex;
   padding-right: 100px;
@@ -39,6 +43,9 @@ body{
 .nav-list a{
    text-decoration: none;
    color: #F9F6EE;
+}
+.nav-list a:hover{
+  color: #7FFFD4;
 }
 .intro{
   height: 660px;
@@ -105,8 +112,7 @@ body{
 
 }
 .pfp:hover{
-  transform: translateY(-20px);
-  transform: translateX(-10px);
+  transform: translate(-20px,-10px);
   box-shadow: 0 10px 20px rgba(127, 255, 212, 1) ;
 }
 .project-image{
@@ -116,7 +122,6 @@ body{
 #projects{
   height: 850px;
   width: 100%;
-  border: 2px solid black;
   padding: 10px;
   
 }
@@ -129,15 +134,27 @@ body{
 .project-box{
   text-align: center;
   margin-bottom: 20px;
-  border: 2px solid black;
+  border-radius: 10px;
   width: 450px;
   height: 300px;
   padding-top: 10px;
+  background-color: rgb(28, 51, 85);
+  box-shadow: 0 10px 20px rgba(127, 255, 212, 0.5);
+}
+.project-box:hover{
+  transform: translate(-20px, -10px);
+  box-shadow: 0 10px 20px rgba(127, 255, 212, 1) ;
+
+}
+.project-box a{
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  color: #F9F6EE;
+  font-size: 20px;
 }
 #contact{
  height: 740px;
  width: 100%;
- border: 2px solid black;
  text-align: center;
  padding-top: 200px;
  
