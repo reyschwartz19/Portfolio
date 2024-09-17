@@ -7,34 +7,40 @@
 }
 body{
   background-color: #112138;
+ 
+  padding: 0;
   overflow-x: hidden;
-  padding: 0 50px;
-  
 }
+
 .nav-bar{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   height: 65px;
   align-items: center;
-  margin-bottom: 20px;
-  padding-left: 50px;
+  margin: 0 0 20px 0;
   position: fixed;
   background-color: #112138;
   top: 0;
+  left: 0;
+  padding: 10px;
+  border: 2px solid;
+  
+}
+.menu-icon{
+  color: #7FFFD4;
+  display: none;
 }
 .nav-bar
 .nav-list{
   display: flex;
-  padding-right: 100px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 15x;
  
 }
 .logo{
-  height: 75px;
-  width: 95px;
-  padding-left: 20px;
+  height: 50px;
+  width: auto;
 }
 .nav-link{
   padding: 80px;
@@ -48,9 +54,11 @@ body{
   color: #7FFFD4;
 }
 .intro{
-  height: 660px;
+  height: 100vh;
   width: 100%;
-  margin-left: 50px;
+  
+  padding: 0 50px;
+  border: 2px solid black;
   
 }
 .intro-box{
@@ -84,10 +92,10 @@ body{
   font-size: 20px;
 }
 #about{
-  height: 720px;
+  height: 100vh;
   width: 100%;
-  
-  
+  padding: 0 50px;
+  border: 2px solid black;
 }
 .about-info{
   display: flex;
@@ -112,7 +120,7 @@ body{
 
 }
 .pfp:hover{
-  transform: translate(-20px,-10px);
+
   box-shadow: 0 10px 20px rgba(127, 255, 212, 1) ;
 }
 .project-image{
@@ -120,10 +128,10 @@ body{
   height: auto;
 }
 #projects{
-  height: 850px;
+  height: 110%;
   width: 100%;
-  padding: 10px;
-  
+  padding: 50px;
+  border: 2px solid black;
 }
 .project-container{
   display: flex;
@@ -142,7 +150,7 @@ body{
   box-shadow: 0 10px 20px rgba(127, 255, 212, 0.5);
 }
 .project-box:hover{
-  transform: translate(-20px, -10px);
+
   box-shadow: 0 10px 20px rgba(127, 255, 212, 1) ;
 
 }
@@ -153,11 +161,11 @@ body{
   font-size: 20px;
 }
 #contact{
- height: 740px;
+ height: 100vh;
  width: 100%;
  text-align: center;
  padding-top: 200px;
- 
+ border: 2px solid black;
 }
 .icon{
   width: 100px;
@@ -169,4 +177,38 @@ body{
   display: flex;
   gap: 60px;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 480px){
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .nav-bar{
+    width: 100vw;
+    height: 55px;
+    position: sticky;
+  
+  }
+  .nav-list{
+     position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    flex-direction: column;
+    transition: left 0.3s ease-in-out;
+  }
+  .nav-link{
+    margin: 20px 0;
+    text-align: center;
+  }
+  .menu-icon{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .nav-open{
+    left: 0;
+  }
 }
